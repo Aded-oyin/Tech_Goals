@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(150, 150, 150, 0.5);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: rgba(1, 24, 27, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.words {
+    width: 100%;
+    max-width: 800px;
+}
+
+ul {
+    padding-top: 20px;
+    font-size: 1.25em;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-info {
+    padding-left: 5px;
+    text-align: center;
+}
+
+.profile-pic {
+    text-align: center;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgba(22, 30, 93, 0.7);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (min-width: 601px) {
+    .profile {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .profile-info {
+        text-align: left;
+        flex: 1;
+    }
+
+    .profile-pic {
+        flex: 1;
+        text-align: center;
+    }
+
+    .words {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    ul {
+        font-size: 1em;
+    }
+
+    .links {
+        align-items: center;
+    }
+
+    .links a {
+        text-align: center;
+    }
+}
